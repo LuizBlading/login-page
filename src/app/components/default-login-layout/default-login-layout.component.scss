@@ -72,6 +72,10 @@ main {
                 background-color: transparent;
                 padding: 12px 24px;
                 cursor: pointer;
+
+                &:disabled {
+                    opacity: 0.5;
+                }
     
                 // Identifica o elemnto que contém a classe especificada
                 &.btn-primary {
