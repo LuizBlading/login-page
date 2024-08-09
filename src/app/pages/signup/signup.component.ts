@@ -42,9 +42,9 @@ export class SignupComponent {
   }
 
   submit() {
-    this.loginService.login(this.signupForm.value.email, this.signupForm.value.password).subscribe({
-      next: () => this.toastService.success("Login realizado com sucesso!", "Sucesso!"),
-      error: () => this.toastService.error("Erro inesperado! Tente novamente mais tarde!", "Ops!")
+    this.loginService.register(this.signupForm.value.name , this.signupForm.value.email, this.signupForm.value.password).subscribe({
+      next: () => this.toastService.success("Cadastro realizado com sucesso!"),
+      error: () => this.toastService.error("Erro inesperado! Tente novamente mais tarde!")
     })
   }
 
